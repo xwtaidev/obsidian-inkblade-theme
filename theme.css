@@ -1,0 +1,510 @@
+/*
+ * Inkblade / 墨刃 — 墨影 · 赤金
+ * An independent Obsidian theme inspired by the atmosphere of Phantom Blade Zero.
+ * Original CSS; no game artwork, remote assets, JavaScript or required plugins.
+ * MIT © 2026 xwtaidev
+ */
+
+/* 01 — Night: wet stone, aged brass, vermilion, steel. */
+body.theme-dark {
+  color-scheme: dark;
+  --color-base-00: #141819;
+  --color-base-05: #171c1d;
+  --color-base-10: #1c2223;
+  --color-base-20: #22292a;
+  --color-base-25: #293132;
+  --color-base-30: #333d3e;
+  --color-base-35: #404b4c;
+  --color-base-40: #505d5e;
+  --color-base-50: #697677;
+  --color-base-60: #899593;
+  --color-base-70: #a7b0aa;
+  --color-base-100: #dedbd0;
+
+  --accent-h: 39;
+  --accent-s: 39%;
+  --accent-l: 65%;
+
+  --inkblade-gold: #c9b083;
+  --inkblade-vermilion: #df8b7d;
+  --inkblade-seal: #a34e40;
+  --inkblade-steel: #9fbabb;
+  --inkblade-rule: #514a3b;
+
+  --color-red: #df8b7d;
+  --color-red-rgb: 223, 139, 125;
+  --color-orange: #d5a474;
+  --color-orange-rgb: 213, 164, 116;
+  --color-yellow: #c9b083;
+  --color-yellow-rgb: 201, 176, 131;
+  --color-green: #a2b395;
+  --color-green-rgb: 162, 179, 149;
+  --color-cyan: #9fbabb;
+  --color-cyan-rgb: 159, 186, 187;
+  --color-blue: #a0b5cb;
+  --color-blue-rgb: 160, 181, 203;
+  --color-purple: #b9a5c0;
+  --color-purple-rgb: 185, 165, 192;
+  --color-pink: #d0a2ad;
+  --color-pink-rgb: 208, 162, 173;
+
+  --background-primary: #141819;
+  --background-primary-alt: #1a2021;
+  --background-secondary: #101415;
+  --background-secondary-alt: #0d1112;
+  --background-modifier-border: #303839;
+  --background-modifier-border-hover: #505d5e;
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-form-field: #1a2021;
+  --background-modifier-box-shadow: #00000055;
+  --background-modifier-cover: #070a0bc2;
+
+  --text-normal: #dedbd0;
+  --text-muted: #a7b0aa;
+  --text-faint: #899593;
+  --text-on-accent: #141819;
+  --text-on-accent-inverted: #f2eee4;
+  --text-highlight-bg: #c9b0832b;
+  --text-highlight-bg-active: #c9b08345;
+  --interactive-normal: #22292a;
+  --interactive-hover: #2d3536;
+  --scrollbar-bg: #a7b0aa13;
+  --scrollbar-thumb-bg: #a7b0aa36;
+  --scrollbar-active-thumb-bg: #c9b08366;
+  --shadow-s: 0 2px 10px #00000033;
+  --shadow-l: 0 18px 64px #00000066;
+  --highlight-mix-blend-mode: lighten;
+}
+
+/* 02 — Day: rice paper, ink, bronze, cinnabar. */
+body.theme-light {
+  color-scheme: light;
+  --color-base-00: #f1ede3;
+  --color-base-05: #ece7dc;
+  --color-base-10: #e7e1d5;
+  --color-base-20: #e0d9ca;
+  --color-base-25: #d8cfbd;
+  --color-base-30: #cec4b1;
+  --color-base-35: #bcb29f;
+  --color-base-40: #aaa18e;
+  --color-base-50: #8a8272;
+  --color-base-60: #777366;
+  --color-base-70: #5e635e;
+  --color-base-100: #292f2d;
+
+  --accent-h: 36;
+  --accent-s: 44%;
+  --accent-l: 32%;
+
+  --inkblade-gold: #765a2e;
+  --inkblade-vermilion: #a03e30;
+  --inkblade-seal: #a03e30;
+  --inkblade-steel: #3e6569;
+  --inkblade-rule: #c7baa0;
+
+  --color-red: #a03e30;
+  --color-red-rgb: 160, 62, 48;
+  --color-orange: #8c542b;
+  --color-orange-rgb: 140, 84, 43;
+  --color-yellow: #765a2e;
+  --color-yellow-rgb: 118, 90, 46;
+  --color-green: #4f6646;
+  --color-green-rgb: 79, 102, 70;
+  --color-cyan: #3e6569;
+  --color-cyan-rgb: 62, 101, 105;
+  --color-blue: #41607b;
+  --color-blue-rgb: 65, 96, 123;
+  --color-purple: #705477;
+  --color-purple-rgb: 112, 84, 119;
+  --color-pink: #925567;
+  --color-pink-rgb: 146, 85, 103;
+
+  --background-primary: #f1ede3;
+  --background-primary-alt: #e9e3d7;
+  --background-secondary: #e6dfd0;
+  --background-secondary-alt: #ded5c4;
+  --background-modifier-border: #cec4b1;
+  --background-modifier-border-hover: #aaa18e;
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-form-field: #f7f3ea;
+  --background-modifier-box-shadow: #292f2d14;
+  --background-modifier-cover: #292f2d6b;
+
+  --text-normal: #292f2d;
+  --text-muted: #535b55;
+  --text-faint: #605c50;
+  --text-on-accent: #fff9ee;
+  --text-on-accent-inverted: #292f2d;
+  --text-highlight-bg: #b18a3f35;
+  --text-highlight-bg-active: #b18a3f55;
+  --interactive-normal: #e7dfd0;
+  --interactive-hover: #ddd3c0;
+  --scrollbar-bg: #292f2d0a;
+  --scrollbar-thumb-bg: #5e635e3d;
+  --scrollbar-active-thumb-bg: #765a2e80;
+  --shadow-s: 0 2px 10px #292f2d0d;
+  --shadow-l: 0 18px 64px #292f2d26;
+  --highlight-mix-blend-mode: multiply;
+}
+
+/* 03 — Shared tokens. Let Obsidian's native accent picker keep working.
+ * RGB companions above are retained for Obsidian 1.10–1.12 callouts / Canvas.
+ * New tints use color-mix, as recommended by the current official docs.
+ */
+body {
+  --font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-monospace-theme: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --inkblade-heading-font: "Iowan Old Style", "Palatino Linotype", "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", SimSun, Georgia, serif;
+  --file-line-width: 45rem;
+  --line-height-normal: 1.8;
+  --line-height-tight: 1.45;
+  --p-spacing: 1.05rem;
+
+  --radius-s: 3px;
+  --radius-m: 4px;
+  --radius-l: 6px;
+  --radius-xl: 8px;
+  --input-radius: 3px;
+  --button-radius: 3px;
+}
+
+/* Native .theme-dark overrides a few body-level tokens. Match that scope so
+ * links, selection and button hover use the same colors as the preview. */
+body.theme-dark,
+body.theme-light {
+  --input-shadow: none;
+  --input-shadow-hover: none;
+
+  --background-modifier-hover: color-mix(in srgb, var(--text-normal) 5%, transparent);
+  --background-modifier-active-hover: color-mix(in srgb, var(--text-normal) 8%, transparent);
+  /* Native warning buttons and notices use text-on-accent on these surfaces. */
+  --background-modifier-success: var(--color-green);
+  --background-modifier-error: var(--color-red);
+  --background-modifier-error-hover: color-mix(in srgb, var(--color-red) 86%, var(--text-normal));
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: color-mix(in srgb, var(--color-accent) 87%, var(--text-normal));
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--interactive-accent-hover);
+  --text-selection: color-mix(in srgb, var(--color-accent) 24%, transparent);
+  --text-error: var(--color-red);
+  --text-success: var(--color-green);
+  --text-warning: var(--color-orange);
+  --caret-color: var(--inkblade-vermilion);
+}
+
+body {
+  --h1-font: var(--inkblade-heading-font);
+  --h2-font: var(--inkblade-heading-font);
+  --h3-font: var(--inkblade-heading-font);
+  --h1-size: 2em;
+  --h2-size: 1.5em;
+  --h3-size: 1.23em;
+  --h4-size: 1.08em;
+  --h5-size: 1em;
+  --h6-size: 0.93em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --h1-line-height: 1.4;
+  --h2-line-height: 1.5;
+  --h1-letter-spacing: 0.07em;
+  --h2-letter-spacing: 0.045em;
+  --h3-letter-spacing: 0.025em;
+  --h1-color: var(--text-normal);
+  --h2-color: var(--inkblade-gold);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--inkblade-steel);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-muted);
+  --inline-title-font: var(--inkblade-heading-font);
+  --inline-title-color: var(--text-normal);
+  --inline-title-size: 2.2em;
+  --inline-title-weight: 600;
+  --inline-title-line-height: 1.45;
+  --bold-color: var(--text-normal);
+  --italic-color: var(--inkblade-steel);
+
+  --link-color: var(--text-accent);
+  --link-color-hover: var(--text-accent-hover);
+  --link-external-color: var(--inkblade-steel);
+  --link-external-color-hover: var(--text-normal);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-external-decoration: underline;
+  --link-unresolved-color: var(--text-muted);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-decoration-style: dashed;
+  --link-unresolved-decoration-color: var(--inkblade-vermilion);
+
+  --tag-color: var(--inkblade-gold);
+  --tag-color-hover: var(--text-normal);
+  --tag-background: color-mix(in srgb, var(--inkblade-gold) 8%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--inkblade-gold) 15%, transparent);
+  --tag-border-color: color-mix(in srgb, var(--inkblade-gold) 30%, transparent);
+  --tag-border-color-hover: var(--inkblade-gold);
+  --tag-border-width: 1px;
+  --tag-radius: 2px;
+  --tag-size: 0.78em;
+  --tag-padding-x: 0.55em;
+  --tag-padding-y: 0.2em;
+
+  --nav-item-radius: 2px;
+  --nav-item-color: var(--text-muted);
+  --nav-item-color-active: var(--text-accent);
+  --nav-item-color-selected: var(--text-accent);
+  --nav-item-background-active: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  --nav-item-background-selected: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  --nav-item-weight-active: 500;
+  --nav-collapse-icon-color: var(--text-faint);
+  --nav-indentation-guide-color: var(--background-modifier-border);
+  --indentation-guide-color: var(--background-modifier-border);
+  --indentation-guide-color-active: var(--inkblade-gold);
+
+  --ribbon-background: var(--background-secondary-alt);
+  --ribbon-background-collapsed: var(--background-secondary-alt);
+  --titlebar-background: var(--background-secondary-alt);
+  --titlebar-background-focused: var(--background-secondary-alt);
+  --titlebar-text-color: var(--text-muted);
+  --titlebar-text-color-focused: var(--text-normal);
+  --tab-container-background: var(--background-secondary);
+  --tab-background-active: var(--background-primary);
+  --tab-text-color: var(--text-faint);
+  --tab-text-color-active: var(--text-accent);
+  --tab-text-color-focused-active: var(--text-accent);
+  --tab-text-color-focused-active-current: var(--text-accent);
+  --tab-divider-color: transparent;
+  --tab-outline-color: var(--background-modifier-border);
+  --tab-radius-active: 3px 3px 0 0;
+  --divider-color: var(--background-modifier-border);
+  --divider-color-hover: var(--color-accent);
+  --status-bar-background: var(--background-secondary);
+  --status-bar-text-color: var(--text-faint);
+  --status-bar-border-color: var(--background-modifier-border);
+  --status-bar-radius: 0;
+
+  --modal-background: var(--background-primary);
+  --modal-border-color: var(--inkblade-rule);
+  --modal-radius: 6px;
+  --modal-shadow: var(--shadow-l);
+  --prompt-background: var(--background-primary);
+  --prompt-border-color: var(--inkblade-rule);
+  --background-modifier-message: var(--background-secondary);
+  --menu-background: var(--background-primary-alt);
+  --menu-border-color: var(--inkblade-rule);
+  --search-result-background: var(--background-primary-alt);
+  --search-result-file-matched-color: var(--text-normal);
+  --search-result-file-matched-bg: var(--text-highlight-bg);
+
+  --blockquote-border-thickness: 2px;
+  --blockquote-border-color: var(--inkblade-seal);
+  --blockquote-background-color: color-mix(in srgb, var(--inkblade-gold) 4%, transparent);
+  --blockquote-color: var(--text-muted);
+  --blockquote-font-style: normal;
+  --callout-radius: 3px;
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.28;
+  --callout-padding: 16px 20px;
+  --callout-blend-mode: normal;
+
+  --checkbox-radius: 2px;
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--interactive-accent-hover);
+  --checkbox-marker-color: var(--text-on-accent);
+  --checklist-done-color: var(--text-faint);
+  --checklist-done-decoration: line-through;
+  --list-marker-color: var(--inkblade-gold);
+  --list-marker-color-hover: var(--inkblade-vermilion);
+  --hr-color: var(--inkblade-rule);
+  --hr-thickness: 1px;
+
+  --code-background: var(--background-primary-alt);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-function: var(--inkblade-gold);
+  --code-keyword: var(--inkblade-vermilion);
+  --code-operator: var(--inkblade-vermilion);
+  --code-property: var(--inkblade-steel);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-green);
+  --code-tag: var(--inkblade-vermilion);
+  --code-value: var(--color-purple);
+  --code-border-color: var(--background-modifier-border);
+  --code-border-width: 1px;
+  --code-radius: 3px;
+
+  --table-border-color: var(--background-modifier-border);
+  --table-header-background: color-mix(in srgb, var(--inkblade-gold) 7%, transparent);
+  --table-header-background-hover: color-mix(in srgb, var(--inkblade-gold) 11%, transparent);
+  --table-header-color: var(--inkblade-gold);
+  --table-header-weight: 600;
+  --table-row-background-hover: var(--background-modifier-hover);
+  --table-row-alt-background: color-mix(in srgb, var(--text-normal) 2%, transparent);
+  --table-selection: var(--text-selection);
+  --table-selection-border-color: var(--color-accent);
+  --metadata-label-text-color: var(--text-faint);
+  --metadata-label-text-color-hover: var(--text-muted);
+  --metadata-border-color: var(--background-modifier-border);
+  --metadata-property-radius: 2px;
+
+  --graph-background: var(--background-primary);
+  --graph-line: var(--background-modifier-border-hover);
+  --graph-node: var(--inkblade-steel);
+  --graph-node-focused: var(--color-accent);
+  --graph-node-tag: var(--color-green);
+  --graph-node-attachment: var(--inkblade-vermilion);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-text: var(--text-muted);
+  --canvas-background: var(--background-primary);
+  --canvas-dot-pattern: var(--background-modifier-border);
+  --canvas-card-label-color: var(--text-muted);
+}
+
+/* 04 — A thin brass edge on active UI; native layout and drag targets stay intact. */
+.nav-file-title.is-active {
+  box-shadow: inset 2px 0 var(--color-accent);
+}
+
+.workspace-tab-header.is-active {
+  box-shadow: inset 0 1px var(--inkblade-gold);
+}
+
+.workspace-leaf-content[data-type="markdown"] .view-content {
+  background-image: radial-gradient(ellipse at 100% 0%, color-mix(in srgb, var(--inkblade-gold) 3%, transparent), transparent 55%);
+}
+
+.side-dock-ribbon-action:hover,
+.view-action:hover {
+  color: var(--text-accent);
+}
+
+/* 05 — The notebook. Decorative marks never replace or add note text. */
+.inline-title {
+  letter-spacing: 0.08em;
+  border-inline-start: 3px solid var(--inkblade-seal);
+  padding-inline-start: 0.5em;
+}
+
+.markdown-rendered h2 {
+  border-bottom: 1px solid var(--inkblade-rule);
+  padding-bottom: 0.35em;
+  margin-top: 1.8em;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  border-bottom: 1px solid var(--inkblade-rule);
+  padding-bottom: 0.3em;
+}
+
+.markdown-rendered a,
+.cm-hmd-internal-link,
+.cm-link {
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 1px;
+}
+
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-highlight {
+  color: var(--text-normal);
+  border-radius: 1px;
+  padding-block: 0.08em;
+}
+
+.markdown-rendered blockquote {
+  padding: 0.8em 1.15em;
+  margin-inline: 0;
+}
+
+.markdown-rendered blockquote p:first-child { margin-top: 0; }
+.markdown-rendered blockquote p:last-child { margin-bottom: 0; }
+
+.markdown-rendered pre {
+  border-inline-start: 2px solid var(--inkblade-rule);
+}
+
+.markdown-rendered :not(pre) > code {
+  color: var(--inkblade-steel);
+  padding: 0.12em 0.35em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 2px;
+}
+
+.cm-s-obsidian span.cm-inline-code {
+  color: var(--inkblade-steel);
+}
+
+.markdown-rendered img,
+.markdown-rendered video {
+  border-radius: 3px;
+}
+
+.metadata-container {
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+}
+
+/* 06 — Optional native callouts: [!blade] and [!scroll]. */
+.callout[data-callout="blade"] {
+  --callout-color: var(--color-red-rgb);
+  --callout-icon: lucide-swords;
+}
+
+.callout[data-callout="scroll"] {
+  --callout-color: var(--color-yellow-rgb);
+  --callout-icon: lucide-scroll-text;
+}
+
+/* 07 — Touch and print. Do not resize the app's panes or hide core controls. */
+body.is-mobile {
+  --file-margins: 24px 20px;
+  --inline-title-size: 1.9em;
+  --h1-size: 1.8em;
+  --h2-size: 1.4em;
+  --metadata-label-width: 6.5em;
+  --callout-padding: 12px 14px;
+}
+
+@media print {
+  body.theme-dark,
+  body.theme-light {
+    color-scheme: light;
+    --background-primary: #ffffff;
+    --background-primary-alt: #f5f3ee;
+    --background-secondary: #ffffff;
+    --background-modifier-border: #cbc6bb;
+    --text-normal: #292f2d;
+    --text-muted: #535b55;
+    --text-faint: #605c50;
+    --accent-h: 36;
+    --accent-s: 44%;
+    --accent-l: 32%;
+    --inkblade-gold: #765a2e;
+    --inkblade-vermilion: #a03e30;
+    --inkblade-seal: #a03e30;
+    --inkblade-steel: #3e6569;
+    --inkblade-rule: #c7baa0;
+    --text-highlight-bg: #eee1bf;
+    --text-highlight-bg-active: #e4d4a8;
+    --text-on-accent: #fff9ee;
+    --color-red: #a03e30;
+    --color-red-rgb: 160, 62, 48;
+    --color-orange: #8c542b;
+    --color-orange-rgb: 140, 84, 43;
+    --color-yellow: #765a2e;
+    --color-yellow-rgb: 118, 90, 46;
+    --color-green: #4f6646;
+    --color-green-rgb: 79, 102, 70;
+    --color-cyan: #3e6569;
+    --color-cyan-rgb: 62, 101, 105;
+    --color-blue: #41607b;
+    --color-blue-rgb: 65, 96, 123;
+    --color-purple: #705477;
+    --color-purple-rgb: 112, 84, 119;
+    --color-pink: #925567;
+    --color-pink-rgb: 146, 85, 103;
+    --highlight-mix-blend-mode: multiply;
+  }
+}

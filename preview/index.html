@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>墨刃 Inkblade — Obsidian 主题预览</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="preview.css">
+  <link rel="stylesheet" href="../theme.css">
+  <script src="preview.js" defer></script>
+</head>
+<body class="theme-dark preview">
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1zm0 0v15"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m15 4 5 5M3 21l2-7L16 3a2 2 0 0 1 3 0l2 2a2 2 0 0 1 0 3L10 19zM5 14l5 5"/></symbol>
+    <symbol id="i-graph" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="11" cy="19" r="2"/><path d="m7 6 10-1M6 8l4 9M18 7l-6 10"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m9 3-1 3-3 1-2 4 2 2v4l4 2 2-1 3 2 4-2v-3l3-2-1-4-3-1-1-3z"/></symbol>
+    <symbol id="i-swords" viewBox="0 0 24 24"><path d="m3 3 3 1 14 14-2 2L4 6zM14 17l6-6M4 20l5-5M3 15l6 6M15 3l6 0 0 6M14 10l7-7"/></symbol>
+    <symbol id="i-scroll" viewBox="0 0 24 24"><path d="M6 3h12a3 3 0 0 1 3 3v2h-5V6a3 3 0 0 0-6 0v12a3 3 0 0 1-6 0v-2h12v2a3 3 0 0 0 3 3H7M14 21h5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+  </svg>
+
+  <header class="preview-bar">
+    <a class="preview-brand" href="index.html"><span class="brand-seal">墨</span><strong>墨刃</strong><span class="brand-en">INKBLADE</span></a>
+    <span class="preview-caption">OBSIDIAN THEME / 01</span>
+    <div class="preview-tools">
+      <button id="mode-toggle" class="toolbar-button" type="button" aria-pressed="false"><svg class="icon"><use href="#i-pen"/></svg><span>编辑预览</span></button>
+      <button id="theme-toggle" class="toolbar-button" type="button" aria-label="切换至宣纸浅色" aria-pressed="false"><svg class="icon"><use href="#i-sun"/></svg><span>宣纸</span></button>
+    </div>
+  </header>
+
+  <div class="demo-shell app-container">
+    <div class="workspace">
+      <nav class="workspace-ribbon mod-left" aria-label="工具栏">
+        <button class="side-dock-ribbon-action ribbon-active" data-action="files" aria-label="显示文件列表"><svg class="icon"><use href="#i-folder"/></svg></button>
+        <button class="side-dock-ribbon-action" data-action="search" aria-label="搜索笔记"><svg class="icon"><use href="#i-search"/></svg></button>
+        <button class="side-dock-ribbon-action" data-action="graph" aria-label="查看关系图示意"><svg class="icon"><use href="#i-graph"/></svg></button>
+        <button class="side-dock-ribbon-action ribbon-bottom" data-action="settings" aria-label="打开外观预览设置"><svg class="icon"><use href="#i-settings"/></svg></button>
+      </nav>
+
+      <aside class="workspace-split mod-left-split" id="file-sidebar" aria-label="文件列表">
+        <div class="vault-header"><span>江湖一卷</span><span class="vault-caption">PERSONAL VAULT</span></div>
+        <div class="sidebar-heading"><span>文件</span><button class="icon-button" data-action="search" aria-label="查找文件"><svg class="icon"><use href="#i-search"/></svg></button></div>
+        <div class="nav-files-container">
+          <div class="nav-folder">
+            <div class="nav-folder-title"><svg class="icon small down"><use href="#i-chevron"/></svg><svg class="icon small"><use href="#i-folder"/></svg><span>01 · 行走江湖</span></div>
+            <div class="nav-folder-children">
+              <button class="nav-file-title is-active" data-note="journal"><svg class="icon small"><use href="#i-file"/></svg>夜行手记</button>
+              <button class="nav-file-title" data-note="weapons"><svg class="icon small"><use href="#i-file"/></svg>兵器谱</button>
+              <button class="nav-file-title" data-note="palette"><svg class="icon small"><use href="#i-file"/></svg>墨影与赤金</button>
+            </div>
+          </div>
+          <div class="nav-folder">
+            <div class="nav-folder-title"><svg class="icon small down"><use href="#i-chevron"/></svg><svg class="icon small"><use href="#i-folder"/></svg><span>02 · 拾遗录</span></div>
+            <div class="nav-folder-children">
+              <button class="nav-file-title" data-note="journal"><svg class="icon small"><use href="#i-file"/></svg>雨声与刀光</button>
+              <button class="nav-file-title" data-note="palette"><svg class="icon small"><use href="#i-file"/></svg>旧物的颜色</button>
+            </div>
+          </div>
+          <div class="nav-folder-title closed-folder"><svg class="icon small"><use href="#i-chevron"/></svg><svg class="icon small"><use href="#i-folder"/></svg><span>03 · 藏书阁</span></div>
+        </div>
+        <div class="sidebar-footer"><span class="mini-seal">刃</span><div>笔下有锋，心中有光。<small>INK & BLADE</small></div></div>
+      </aside>
+
+      <main class="workspace-split mod-root">
+        <div class="workspace-tab-header-container" role="tablist" aria-label="笔记">
+          <button class="workspace-tab-header is-active" role="tab" aria-selected="true" data-note="journal"><svg class="icon small"><use href="#i-file"/></svg><span>夜行手记</span></button>
+          <button class="workspace-tab-header" role="tab" aria-selected="false" data-note="weapons" tabindex="-1"><svg class="icon small"><use href="#i-file"/></svg><span>兵器谱</span></button>
+          <button class="workspace-tab-header" role="tab" aria-selected="false" data-note="palette" tabindex="-1"><svg class="icon small"><use href="#i-file"/></svg><span>墨影与赤金</span></button>
+        </div>
+        <div class="workspace-leaf">
+          <div class="workspace-leaf-content" data-type="markdown">
+            <div class="view-header">
+              <button class="icon-button mobile-menu" data-action="files" aria-label="打开文件列表" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+              <div class="breadcrumb"><span>01 · 行走江湖</span><svg class="icon small"><use href="#i-chevron"/></svg><span id="breadcrumb-title">夜行手记</span></div>
+              <button class="icon-button" data-action="settings" aria-label="外观预览设置"><svg class="icon"><use href="#i-more"/></svg></button>
+            </div>
+            <div class="view-content" id="note-scroller">
+              <article class="markdown-preview-view markdown-rendered" id="reading-pane" aria-label="笔记阅读预览">
+                <div class="note-eyebrow"><span>江湖手札</span><span>卷一 / THE WANDERER</span></div>
+                <div class="inline-title">夜行手记</div>
+                <div class="metadata-container"><span class="metadata-property-key">日期</span><span>2026 年 10 月 30 日</span><span class="metadata-property-key">标签</span><span><a href="#" class="tag">#江湖</a> <a href="#" class="tag">#灵感</a></span></div>
+                <p class="opening">雨落旧巷，灯照归人。</p>
+                <p>夜色深处，万物都隐去了轮廓。只有屋檐的雨、远处的灯，以及手中尚有余温的一卷书。<strong>记下所见，也记下未曾说出口的念头。</strong></p>
+                <blockquote><p>行于暗处，心有微光。<br>刀锋所向，亦是归途。</p></blockquote>
+                <h2 id="section-travel">壹 · 雨夜行旅</h2>
+                <p>一方墨色容得下整个江湖。用 <a class="internal-link" href="#section-clues">双向链接</a> 串起零散的线索，让每一页笔记，都成为下一段路的起点。值得重读的句子，留一笔 <mark>旧金色的标记</mark>。</p>
+                <div class="callout" data-callout="scroll"><div class="callout-title"><svg class="icon"><use href="#i-scroll"/></svg><div class="callout-title-inner">拾遗 · 留下值得记住的事</div></div><div class="callout-content"><p>写作如行路，不必急着抵达。先收集，再连接，最后让自己的思考慢慢成形。</p></div></div>
+                <h2 id="section-clues">贰 · 案头线索</h2>
+                <table><thead><tr><th>线索</th><th>所见</th><th>状态</th></tr></thead><tbody><tr><td>旧巷灯火</td><td>冷雨里的一点暖意</td><td><span class="state recorded">已收录</span></td></tr><tr><td>残页上的字</td><td>与 <a class="internal-link" href="#section-tasks">行旅清单</a> 相互印证</td><td><span class="state pending">待考证</span></td></tr><tr><td>远山的回声</td><td>留给下一次出发</td><td><span class="state">未完</span></td></tr></tbody></table>
+                <h3 id="section-tasks">启程之前</h3>
+                <ul class="contains-task-list"><li class="task-list-item is-checked"><label><input class="task-list-item-checkbox" type="checkbox" checked>整理今日见闻</label></li><li class="task-list-item"><label><input class="task-list-item-checkbox" type="checkbox">把零散的想法连成一条线</label></li><li class="task-list-item"><label><input class="task-list-item-checkbox" type="checkbox">留一页空白，给明天的自己</label></li></ul>
+                <h3 id="section-code">一段心法</h3>
+                <pre><code><span class="token comment">// 留下思考的痕迹。</span>
+<span class="token keyword">const</span> journal = {
+  place: <span class="token string">"烟雨旧巷"</span>,
+  light: <span class="token string">"心中微光"</span>,
+  keepWalking: <span class="token boolean">true</span>
+};</code></pre>
+                <div class="callout" data-callout="blade"><div class="callout-title"><svg class="icon"><use href="#i-swords"/></svg><div class="callout-title-inner">醒刃 · 勿忘来路</div></div><div class="callout-content"><p>这是一款适合日常书写的主题。锋芒留给重点，宁静留给文字。</p></div></div>
+                <hr><p class="note-end">一卷未尽，来日续笔。</p>
+              </article>
+              <section class="markdown-source-view mod-cm6 is-live-preview" id="editing-pane" aria-label="Markdown 编辑样式示意" hidden>
+                <div class="note-eyebrow"><span>编辑模式</span><span>MARKDOWN / STYLE SAMPLE</span></div>
+                <div class="cm-editor"><div class="cm-content" contenteditable="true" role="textbox" aria-label="可编辑的 Markdown 样式示例" aria-multiline="true" spellcheck="false">
+                  <div class="cm-line HyperMD-header HyperMD-header-1"><span class="cm-formatting cm-formatting-header"># </span>夜行手记</div>
+                  <div class="cm-line"><br></div>
+                  <div class="cm-line">雨落旧巷，灯照归人。</div>
+                  <div class="cm-line">记下所见，也记下<span class="cm-strong">未曾说出口的念头。</span></div>
+                  <div class="cm-line"><br></div>
+                  <div class="cm-line HyperMD-header HyperMD-header-2"><span class="cm-formatting">## </span>壹 · 雨夜行旅</div>
+                  <div class="cm-line">用 <span class="cm-hmd-internal-link">[[双向链接]]</span> 串起零散的线索。</div>
+                  <div class="cm-line">留一笔 <span class="cm-highlight">==旧金色的标记==</span>，给值得重读的句子。</div>
+                  <div class="cm-line"><br></div>
+                  <div class="cm-line HyperMD-quote"><span class="cm-formatting">&gt; </span>行于暗处，心有微光。</div>
+                  <div class="cm-line"><br></div>
+                  <div class="cm-line HyperMD-header HyperMD-header-3"><span class="cm-formatting">### </span>启程之前</div>
+                  <div class="cm-line"><span class="cm-formatting">- [x] </span>整理今日见闻</div>
+                  <div class="cm-line"><span class="cm-formatting">- [ ] </span>把零散的想法连成一条线</div>
+                  <div class="cm-line"><br></div>
+                  <div class="cm-line">案头只留一盏灯，一卷书，与 <span class="cm-inline-code">`keepWalking: true`</span>。</div>
+                </div></div>
+                <p class="sample-disclaimer">可修改此样式示例；刷新后恢复。这里只展示编辑器样式，不执行 Markdown 解析或保存笔记。</p>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="workspace-split mod-right-split" aria-label="大纲和关系图">
+        <div class="right-section"><div class="sidebar-heading">大纲 <span class="small-caption">OUTLINE</span></div><nav class="outline"><a class="outline-active" href="#section-travel">壹 · 雨夜行旅</a><a href="#section-clues">贰 · 案头线索</a><a class="outline-child" href="#section-tasks">启程之前</a><a class="outline-child" href="#section-code">一段心法</a></nav></div>
+        <div class="right-section graph-section" id="graph-panel"><div class="sidebar-heading">局部关系图 <span class="small-caption">示意</span></div>
+          <svg class="local-graph" viewBox="0 0 220 190" role="img" aria-label="局部关系图样式示意，非实时笔记关系"><g class="graph-lines"><path d="M110 88 48 43M110 88 177 48M110 88 181 126M110 88 58 147M110 88 99 162M48 43 177 48M58 147 99 162M177 48 181 126"/></g><g class="graph-nodes"><circle cx="48" cy="43" r="4"/><circle cx="177" cy="48" r="4"/><circle cx="181" cy="126" r="5"/><circle cx="58" cy="147" r="4"/><circle cx="99" cy="162" r="3"/><circle class="graph-center-halo" cx="110" cy="88" r="16"/><circle class="graph-center" cx="110" cy="88" r="6"/></g><g class="graph-labels"><text x="110" y="116" text-anchor="middle">夜行手记</text><text x="48" y="28" text-anchor="middle">雨声</text><text x="177" y="32" text-anchor="middle">兵器谱</text><text x="181" y="148" text-anchor="middle">旧巷</text></g></svg>
+        </div>
+        <div class="right-section palette-section"><div class="sidebar-heading">墨影 · 赤金</div><div class="palette-chips"><span class="chip-ink" title="墨黑"></span><span class="chip-steel" title="冷青"></span><span class="chip-gold" title="旧金"></span><span class="chip-red" title="朱砂"></span><span class="chip-paper" title="宣纸"></span></div><p>冷墨为底，旧金为引。<br>一抹朱砂，落笔有声。</p></div>
+      </aside>
+    </div>
+    <footer class="status-bar"><span>Inkblade <span class="status-dot"></span> <span id="mode-name">墨夜</span></span><span id="view-status">阅读预览</span><span>UTF-8</span></footer>
+  </div>
+  <footer class="preview-footnote">独立同人主题 · 灵感来自《影之刃零》 · 此页面为界面模拟预览</footer>
+  <button class="sidebar-scrim" id="sidebar-scrim" aria-label="关闭文件列表" hidden></button>
+
+  <dialog id="settings-dialog" class="modal preview-dialog" aria-labelledby="settings-title">
+    <div class="dialog-heading"><h2 id="settings-title">外观预览</h2><button class="icon-button" data-close-dialog aria-label="关闭设置"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <p class="dialog-description">此处设置只影响预览页面。Obsidian 中请使用「设置 → 外观」。</p>
+    <div class="setting-item"><label for="color-scheme">基础配色</label><select id="color-scheme"><option value="dark">墨夜 · 深色</option><option value="light">宣纸 · 浅色</option></select></div>
+    <div class="setting-item"><label for="font-size">正文字号 <output id="font-size-value">16</output> px</label><input type="range" id="font-size" min="14" max="22" value="16"></div>
+    <div class="setting-item"><label for="readable-width">缩减栏宽</label><input id="readable-width" type="checkbox" checked></div>
+    <div class="dialog-actions"><button class="mod-cta" data-close-dialog>完成</button></div>
+  </dialog>
+
+  <dialog id="search-dialog" class="prompt preview-dialog" aria-labelledby="search-title">
+    <div class="dialog-heading"><h2 id="search-title">查找笔记</h2><button class="icon-button" data-close-dialog aria-label="关闭搜索"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <label class="search-label" for="note-search">输入标题关键词</label><input id="note-search" type="search" placeholder="搜索夜行手记、兵器谱、墨影与赤金…" autocomplete="off">
+    <div id="search-results" class="suggestion-container"></div>
+  </dialog>
+</body>
+</html>
